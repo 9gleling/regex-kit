@@ -1,86 +1,212 @@
-# 개인정보처리방침
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RegexKit 개인정보처리방침</title>
+  <style>
+    body {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
+        "Noto Sans KR", Arial, sans-serif;
+      line-height: 1.75;
+      color: #111;
+      background: #fff;
+    }
 
-RegexKit은 사용자의 개인정보를 수집, 저장, 판매하거나 외부 서버로 전송하지 않습니다.
+    h1 {
+      margin-bottom: 24px;
+      font-size: 32px;
+      letter-spacing: -0.04em;
+    }
 
-RegexKit은 사용자가 정규식을 테스트하고, 정규식 패턴을 관리하며, 다양한 프로그래밍 언어용 정규식 코드 스니펫을 생성할 수 있도록 돕는 개발자 도구입니다.
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 12px;
+      font-size: 22px;
+      letter-spacing: -0.03em;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 8px;
+    }
 
-## 데이터 처리
+    h3 {
+      margin-top: 24px;
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
 
-RegexKit의 정규식 테스트, 패턴 매칭, 매치 결과 하이라이트, 캡처 그룹 분석, 코드 스니펫 생성 기능은 모두 사용자의 브라우저 내부에서 로컬로 처리됩니다.
+    p {
+      margin: 0 0 16px;
+    }
 
-RegexKit은 사용자가 입력한 정규식 패턴, 테스트 텍스트, 웹페이지에서 선택한 텍스트, 생성된 코드 스니펫을 외부 서버로 전송하지 않습니다.
+    ul {
+      margin: 0 0 16px 20px;
+      padding: 0;
+    }
 
-## 로컬 저장 데이터
+    li {
+      margin-bottom: 6px;
+    }
 
-RegexKit은 사용자 편의를 위해 Chrome 로컬 저장소를 사용할 수 있습니다.
+    code {
+      background: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 0.95em;
+    }
 
-저장될 수 있는 정보는 다음과 같습니다.
+    .notice {
+      padding: 16px 18px;
+      background: #f7f7f5;
+      border: 1px solid #e6e6e0;
+      border-radius: 12px;
+      margin-bottom: 28px;
+    }
 
-* 사용자가 직접 추가한 사용자 정의 정규식 패턴
-* 테마 설정
-* 마지막으로 선택한 프로그래밍 언어
-* 임시 에디터 설정
+    .updated {
+      margin-top: 40px;
+      color: #666;
+      font-size: 14px;
+    }
 
-이 데이터는 `chrome.storage.local`을 통해 사용자의 브라우저 내부에만 저장됩니다.
+    a {
+      color: #0b57d0;
+      text-decoration: none;
+    }
 
-RegexKit은 방문 기록, 개인정보, 비밀번호, 결제 정보, 웹페이지 전체 내용 등을 저장하지 않습니다.
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>RegexKit 개인정보처리방침</h1>
 
-## 웹페이지에서 선택한 텍스트
+  <div class="notice">
+    <p>
+      RegexKit은 사용자의 개인정보를 수집, 저장, 판매하거나 외부 서버로 전송하지 않습니다.
+    </p>
+    <p>
+      RegexKit은 사용자가 정규식을 테스트하고, 정규식 패턴을 관리하며,
+      다양한 프로그래밍 언어용 정규식 코드 스니펫을 생성할 수 있도록 돕는 개발자 도구입니다.
+    </p>
+  </div>
 
-RegexKit은 사용자가 웹페이지에서 텍스트를 선택한 뒤, 브라우저 우클릭 메뉴를 통해 해당 텍스트를 RegexKit 테스터로 전달하는 기능을 제공할 수 있습니다.
+  <h2>1. 데이터 처리</h2>
+  <p>
+    RegexKit의 정규식 테스트, 패턴 매칭, 매치 결과 하이라이트,
+    캡처 그룹 분석, 코드 스니펫 생성 기능은 모두 사용자의 브라우저 내부에서 로컬로 처리됩니다.
+  </p>
+  <p>
+    RegexKit은 사용자가 입력한 정규식 패턴, 테스트 텍스트, 웹페이지에서 선택한 텍스트,
+    생성된 코드 스니펫을 외부 서버로 전송하지 않습니다.
+  </p>
 
-이 기능은 사용자가 명시적으로 텍스트를 선택하고 RegexKit 메뉴를 실행한 경우에만 동작합니다.
+  <h2>2. 로컬 저장 데이터</h2>
+  <p>
+    RegexKit은 사용자 편의를 위해 Chrome 로컬 저장소를 사용할 수 있습니다.
+  </p>
+  <p>저장될 수 있는 정보는 다음과 같습니다.</p>
 
-선택된 텍스트는 사용자의 브라우저 내부에서만 처리되며, 외부 서버로 전송되지 않습니다.
+  <ul>
+    <li>사용자가 직접 추가한 사용자 정의 정규식 패턴</li>
+    <li>테마 설정</li>
+    <li>마지막으로 선택한 프로그래밍 언어</li>
+    <li>임시 에디터 설정</li>
+  </ul>
 
-## 권한 사용
+  <p>
+    이 데이터는 <code>chrome.storage.local</code>을 통해 사용자의 브라우저 내부에만 저장됩니다.
+  </p>
+  <p>
+    RegexKit은 방문 기록, 개인정보, 비밀번호, 결제 정보, 웹페이지 전체 내용 등을 저장하지 않습니다.
+  </p>
 
-RegexKit은 핵심 기능 제공을 위해 필요한 브라우저 권한만 요청합니다.
+  <h2>3. 웹페이지에서 선택한 텍스트</h2>
+  <p>
+    RegexKit은 사용자가 웹페이지에서 텍스트를 선택한 뒤,
+    브라우저 우클릭 메뉴를 통해 해당 텍스트를 RegexKit 테스터로 전달하는 기능을 제공할 수 있습니다.
+  </p>
+  <p>
+    이 기능은 사용자가 명시적으로 텍스트를 선택하고 RegexKit 메뉴를 실행한 경우에만 동작합니다.
+  </p>
+  <p>
+    선택된 텍스트는 사용자의 브라우저 내부에서만 처리되며, 외부 서버로 전송되지 않습니다.
+  </p>
 
-### activeTab 권한
+  <h2>4. 권한 사용</h2>
+  <p>
+    RegexKit은 핵심 기능 제공을 위해 필요한 브라우저 권한만 요청합니다.
+  </p>
 
-`activeTab` 권한은 사용자가 현재 활성 탭에서 확장프로그램 기능을 명시적으로 실행했을 때만 사용됩니다.
+  <h3>activeTab 권한</h3>
+  <p>
+    <code>activeTab</code> 권한은 사용자가 현재 활성 탭에서 확장프로그램 기능을
+    명시적으로 실행했을 때만 사용됩니다.
+  </p>
+  <p>
+    이 권한은 사용자가 선택한 웹페이지 텍스트를 RegexKit에서 테스트할 수 있도록 처리하는 데 필요합니다.
+  </p>
 
-이 권한은 사용자가 선택한 웹페이지 텍스트를 RegexKit에서 테스트할 수 있도록 처리하는 데 필요합니다.
+  <h3>scripting 권한</h3>
+  <p>
+    <code>scripting</code> 권한은 사용자가 관련 기능을 실행했을 때
+    현재 웹페이지에서 선택한 텍스트를 읽기 위해 사용됩니다.
+  </p>
+  <p>
+    스크립트는 사용자의 명시적인 동작 없이 자동으로 주입되거나 실행되지 않습니다.
+  </p>
 
-### scripting 권한
+  <h3>storage 권한</h3>
+  <p>
+    <code>storage</code> 권한은 사용자가 직접 추가한 정규식 패턴과
+    로컬 UI 설정을 저장하기 위해 사용됩니다.
+  </p>
+  <p>
+    저장된 데이터는 사용자의 브라우저 내부에만 보관됩니다.
+  </p>
 
-`scripting` 권한은 사용자가 관련 기능을 실행했을 때 현재 웹페이지에서 선택한 텍스트를 읽기 위해 사용됩니다.
+  <h3>contextMenus 권한</h3>
+  <p>
+    <code>contextMenus</code> 권한은 사용자가 웹페이지에서 선택한 텍스트를
+    RegexKit으로 빠르게 테스트할 수 있도록 브라우저 우클릭 메뉴를 추가하기 위해 사용됩니다.
+  </p>
 
-스크립트는 사용자의 명시적인 동작 없이 자동으로 주입되거나 실행되지 않습니다.
+  <h2>5. 제3자 서비스</h2>
+  <p>
+    RegexKit은 제3자 분석 도구, 추적 스크립트, 광고 네트워크 또는 외부 서버를 사용하여
+    사용자 데이터를 처리하지 않습니다.
+  </p>
+  <p>
+    RegexKit은 사용자 데이터를 제3자에게 전송하지 않습니다.
+  </p>
 
-### storage 권한
+  <h2>6. 원격 코드</h2>
+  <p>
+    RegexKit은 원격 JavaScript 코드를 실행하지 않습니다.
+  </p>
+  <p>
+    확장프로그램의 모든 핵심 로직은 확장프로그램 패키지 내부에 포함되어 있습니다.
+  </p>
 
-`storage` 권한은 사용자가 직접 추가한 정규식 패턴과 로컬 UI 설정을 저장하기 위해 사용됩니다.
+  <h2>7. 데이터 공유</h2>
+  <p>
+    RegexKit은 사용자 데이터를 판매, 공유 또는 제3자에게 이전하지 않습니다.
+  </p>
 
-저장된 데이터는 사용자의 브라우저 내부에만 보관됩니다.
+  <h2>8. 문의</h2>
+  <p>
+    본 개인정보처리방침에 대한 문의는 아래 이메일로 연락해 주세요.
+  </p>
+  <p>
+    <a href="mailto:9gleling@gmail.com">9gleling@gmail.com</a>
+  </p>
 
-### contextMenus 권한
-
-`contextMenus` 권한은 사용자가 웹페이지에서 선택한 텍스트를 RegexKit으로 빠르게 테스트할 수 있도록 브라우저 우클릭 메뉴를 추가하기 위해 사용됩니다.
-
-## 제3자 서비스
-
-RegexKit은 제3자 분석 도구, 추적 스크립트, 광고 네트워크 또는 외부 서버를 사용하여 사용자 데이터를 처리하지 않습니다.
-
-RegexKit은 사용자 데이터를 제3자에게 전송하지 않습니다.
-
-## 원격 코드
-
-RegexKit은 원격 JavaScript 코드를 실행하지 않습니다.
-
-확장프로그램의 모든 핵심 로직은 확장프로그램 패키지 내부에 포함되어 있습니다.
-
-## 데이터 공유
-
-RegexKit은 사용자 데이터를 판매, 공유 또는 제3자에게 이전하지 않습니다.
-
-## 문의
-
-본 개인정보처리방침에 대한 문의는 아래 이메일로 연락해 주세요.
-
-[9gleling@gmail.com](mailto:9gleling@gmail.com)
-
-## 최종 업데이트
-
-2026년 5월 27일
+  <p class="updated">
+    최종 업데이트: 2026년 5월 27일
+  </p>
+</body>
+</html>
